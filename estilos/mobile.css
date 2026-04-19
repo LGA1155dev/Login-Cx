@@ -33,6 +33,7 @@ body{
     display: flex;
     flex-flow: column;
     align-items: center;
+    justify-content: center;
     background-color: #ffffffde;
     border-radius: 20px;
     width: 100%;
