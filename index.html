@@ -40,7 +40,7 @@
         </span>
 
         <span class="usuario">
-            gabrielDev <span><i class="fa-solid fa-chevron-right"></i></span>
+            gabrielDev1155 <span><i class="fa-solid fa-chevron-right"></i></span>
         </span>
     
         <div class="biometria">
@@ -65,28 +65,76 @@
         </div>
         
         <div class="select_user">
-            <span><i class="fa-solid fa-user-group"></i> Selecionar úsuario</span>
+            <span><i class="fa-solid fa-user-group"></i> Selecionar usuário</span>
         </div>
         <span class="services">
            <i class="fa-solid fa-ellipsis-vertical"></i>  Serviços pra você
         </span>
+    </div>
+
+    <div class="principal">
+        <span class="frase_principal">Que bom ter você aqui!</span>
+
+        <div class="login_principal">
+            <span class="entrar">
+                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                Entrar
+            </span>
+            <span class="new_account">
+                <i class="fa-brands fa-x-twitter"></i>
+                Abrir nova <br> conta
+            </span>
+            <span class="cadastro">
+                Cadastrar usuário
+            </span>
+
+            <span class="services_principal">
+              <i class="fa-solid fa-ellipsis-vertical"></i>  Serviços para você
+            </span>
+           
+        </div>
     </div>
     
     
     <script>
         let toggle = document.querySelector('.span_toggle')
         const popup = document.querySelector('div.popup_login')
+        const areaPrincipal = document.querySelector('.principal')
+        let entrar = document.querySelector('span.entrar')
 
         toggle.addEventListener('click', () => {
-            toggle.innerHTML = `hello`;
+
+
+            if (toggle.innerHTML === `<i class="fa-solid fa-toggle-off"></i>`){
+
+                toggle.innerHTML = `<i class="fa-solid fa-toggle-on"></i>`;
+
+            } else{
+
+                toggle.innerHTML = `<i class="fa-solid fa-toggle-off"></i>`;
+
+            }
+
+            areaPrincipal.style.display = 'none';
         })
-
+        
+        
         const skip = document.getElementById('skip_popup')
-
+        
         skip.addEventListener('click', () =>{
             popup.style.opacity = '0'; 
-            popup.style.transition = '2s';
+            popup.style.transition = '2s ';
+            popup.style.display = 'none';
+            areaPrincipal.style.display = 'flex';
 
+        })
+
+        
+
+        entrar.addEventListener('click', () =>{
+            popup.style.display = 'flex';
+            popup.style.opacity = '1';
+            areaPrincipal.style.display = 'none';
         })
     </script>
 </body>

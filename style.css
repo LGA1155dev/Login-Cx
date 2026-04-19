@@ -30,9 +30,13 @@
     height: 600px;
  }
 
- .popup_login{
+.popup_login{
    display: none;
- }
+}
+
+.principal{
+   display: none;
+}
 
  .logo{
     border-radius: 20px;
