@@ -1,0 +1,146 @@
+ @charset "UTF-8";
+
+ @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Russo+One&family=Share+Tech+Mono&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Space+Grotesk:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    font-family: "Space Grotesk";
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+ body{
+    background-image: url(imagens-cadastro/mulher-cadastro.png);
+    background-position: center;
+    background-size: cover;
+    background-color: lightgray;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .container{
+    box-shadow: 0px 0px 60px 20px #5c95ca9a;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: white;
+    width: 500px;
+    height: 600px;
+ }
+
+ .logo{
+    border-radius: 20px;
+    /* background-color: #5c95ca; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 100%;
+ }
+
+ .logo img{
+    cursor: pointer;
+    width: 250px;
+ }
+
+ /* .texto{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+ } */
+
+ /* .texto p{ 
+    color: rgb(45, 65, 109);
+    font-size: 1.3em;
+    font-weight: bold;
+ } */
+
+ .email{
+    transition: 1s;
+    padding: 50px;
+    height: 100px;
+    width: 100%;
+ }
+
+ .email input{
+    cursor: pointer;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    width: 100%;
+    font-size: 1em;
+    font-weight: 200;
+    padding: 20px;
+ }
+
+ .senha{
+    transition: 1s;
+    padding: 50px;
+    height: 100px;
+    width: 100%;
+    margin-bottom: 30px;
+ }
+
+ .senha input{
+    cursor: pointer;
+    font-size: 1em;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    padding: 20px;
+    width: 330px;
+ }
+
+ .confirmar{
+    transition: 1s;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    height: 100px;
+    width: 100%;
+ }
+
+ .confirmar input{
+    font-size: 1em;
+    padding: 20px;
+    width: 300px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+
+ }
+
+ .botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+ }
+
+ .botao a{
+    margin-top:  10px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-size: 1.4em;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    /* background-color: #5c95ca; */
+    width: 400px;
+    color: #395875;
+    background-color: white;
+    border: 1px solid #5c95ca;
+ }
+
+ .botao a:hover{
+   color: white;
+    transition: 1s;
+    background-color: #5e8cb4;
+ }

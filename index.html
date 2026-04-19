@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Cx Economica (fake)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilos/mobile.css">
+    <script src="https://kit.fontawesome.com/170c208023.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    
+    <div class="container">
+        <div class="logo">
+            <img src="imagens/Caixa-removebg-preview.png" alt="Logo ilustrativa da caixa">
+            
+            <!-- <p>Venha já ser membro da caixa!</p> -->
+        </div>
+        <div class="email">
+            <input type="text" name="user" id="iuser" placeholder="E-mail" autocomplete="email" minlength="4" maxlength="30" required>
+        </div>
+        <div class="senha">
+            <input type="password" name="senha" id="isenha" placeholder="Senha" autocomplete="current-password" required min="8" max="20">
+        </div>
+        <div class="botao">
+            <a href="error.html" onclick="logar()">Logar-se</a>
+        </div>
+        <div class="cadastro">
+            <p>Ainda não se cadastrou? <strong><a href="cadastro.html">cadastre-se já aqui!</a></strong></p>
+        </div>
+        
+        
+        
+    </div>
+
+    <div class="popup_login">
+        <span class="frase_popup">
+            Que bom ter você aqui denovo! <i class="fa-solid fa-xmark" id="skip_popup"></i>
+        </span>
+
+        <span class="usuario">
+            gabrielDev <span><i class="fa-solid fa-chevron-right"></i></span>
+        </span>
+    
+        <div class="biometria">
+            <span class="bio_simbol">
+                
+                <i class="fa-solid fa-fingerprint" id="bio_simbol"></i> 
+            </span>
+                
+            <span class="acess_bio">
+                    <span class="bio_acess">Acessar com Biometria</span>
+                
+            </span>
+            
+            <span class="span_toggle">
+            <i class="fa-solid fa-toggle-on"></i>
+            </span>
+        
+            
+            <span class="frase_bio"></span>
+            
+            <span class="bio"></span>
+        </div>
+        
+        <div class="select_user">
+            <span><i class="fa-solid fa-user-group"></i> Selecionar úsuario</span>
+        </div>
+        <span class="services">
+           <i class="fa-solid fa-ellipsis-vertical"></i>  Serviços pra você
+        </span>
+    </div>
+    
+    
+    <script>
+        let toggle = document.querySelector('.span_toggle')
+        const popup = document.querySelector('div.popup_login')
+
+        toggle.addEventListener('click', () => {
+            toggle.innerHTML = `hello`;
+        })
+
+        const skip = document.getElementById('skip_popup')
+
+        skip.addEventListener('click', () =>{
+            popup.style.opacity = '0'; 
+            popup.style.transition = '2s';
+
+        })
+    </script>
+</body>
+</html>

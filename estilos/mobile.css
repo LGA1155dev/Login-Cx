@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    
+body{
+    background-image: url('../imagens/player-bsq.png');
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    animation: MudarImagem 36s infinite;
+    
+}
+
+@keyframes MudarImagem {
+    50% {
+            background-image: url('../imagens/player.png');
+        }
+        
+
+    100%{
+            background-image: url('../imagens/player-bsq.png');
+        }
+
+    }
+
+
+.container{
+    display: none;
+}
+
+
+.popup_login{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: #ffffffde;
+    border-radius: 20px;
+    width: 100%;
+    height: 50%;
+
+}
+
+.frase_popup{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 30px;
+    color: #02023d;
+    font-size: 1.3em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.frase_popup > i{
+    font-size: 1.1em;
+    color: orange;
+    cursor: pointer;
+}
+
+.usuario{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    background-color: #327bcd;
+    color: white;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding: 15px;
+    width: 65%;
+}
+
+.biometria{
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: .8em;
+    font-weight: 500;
+}
+
+#bio_simbol{
+    font-size: 4em;
+    color: orange;
+}
+
+.bio_acess{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1.1em;
+    color: #327bcd;
+}
+
+.span_toggle > i{
+    cursor: pointer;
+    font-size: 4em;
+    color: #327bcd;
+}
+
+.select_user{
+    display: flex;
+    width: 65%;
+    cursor: pointer;
+}
+
+.select_user > span{
+    border: 1px solid #2272c8;
+    gap: 5px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    color: #02023d;
+    font-size: 1.2em;
+    font-weight: 500;
+    border-radius: 10px;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.services{
+    color: #02023d;
+    cursor: pointer;
+}
+}
